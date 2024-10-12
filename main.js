@@ -6,5 +6,9 @@ buttons.forEach((button, index) => {
       item.classList.add("hidden");
     });
     text[index].classList.remove("hidden");
+    buttons.forEach((item) => {
+      item.classList.remove("back");
+    });
+    buttons[index].classList.add("back");
   });
 });
